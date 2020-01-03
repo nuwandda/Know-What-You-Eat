@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC7F374523BF64B600711935 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374423BF64A000711935 /* bulletTrain.mp4 */; };
+		DC7F374623BF64B600711935 /* monkey.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374223BF64A000711935 /* monkey.mp4 */; };
+		DC7F374723BF64B600711935 /* newYorkFlip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374323BF64A000711935 /* newYorkFlip.mp4 */; };
+		DC7F374823BF64B600711935 /* shark.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374123BF64A000711935 /* shark.mp4 */; };
 		DCC1B29723A3692A00CE9844 /* EatMoreVegetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC1B29623A3692A00CE9844 /* EatMoreVegetableViewController.swift */; };
 		DCC1B29923A3844200CE9844 /* EatMoreVegetableDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC1B29823A3844200CE9844 /* EatMoreVegetableDetailsViewController.swift */; };
 		DCC1B29B23A3CD8F00CE9844 /* AutoCountHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC1B29A23A3CD8F00CE9844 /* AutoCountHelper.swift */; };
@@ -18,7 +22,6 @@
 		DCC5E44623A27BCB007622AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC5E44523A27BCB007622AF /* Assets.xcassets */; };
 		DCC5E44923A27BCB007622AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC5E44723A27BCB007622AF /* LaunchScreen.storyboard */; };
 		DCD4E98F23AA5A2F00AC4ED7 /* EatMoreVegetableLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4E98E23AA5A2F00AC4ED7 /* EatMoreVegetableLocationViewController.swift */; };
-		DCE1BAD623B4F9C9007B3E43 /* bulletTrain-clip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DCE1BAD523B4F9C1007B3E43 /* bulletTrain-clip.mp4 */; };
 		DCEA4EC523B3389D00E981D5 /* RecipeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA4EC423B3389D00E981D5 /* RecipeVideoViewController.swift */; };
 		DCEA4ECB23B33BAD00E981D5 /* RecipeVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA4ECA23B33BAD00E981D5 /* RecipeVideoTableViewController.swift */; };
 		DCF5408323B39C0600714543 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DCEA4EC823B33A9800E981D5 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 */; };
@@ -27,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC7F374123BF64A000711935 /* shark.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shark.mp4; sourceTree = "<group>"; };
+		DC7F374223BF64A000711935 /* monkey.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = monkey.mp4; sourceTree = "<group>"; };
+		DC7F374323BF64A000711935 /* newYorkFlip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = newYorkFlip.mp4; sourceTree = "<group>"; };
+		DC7F374423BF64A000711935 /* bulletTrain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bulletTrain.mp4; sourceTree = "<group>"; };
 		DCC1B29623A3692A00CE9844 /* EatMoreVegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMoreVegetableViewController.swift; sourceTree = "<group>"; };
 		DCC1B29823A3844200CE9844 /* EatMoreVegetableDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMoreVegetableDetailsViewController.swift; sourceTree = "<group>"; };
 		DCC1B29A23A3CD8F00CE9844 /* AutoCountHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCountHelper.swift; sourceTree = "<group>"; };
@@ -40,7 +47,6 @@
 		DCC5E44823A27BCB007622AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCC5E44A23A27BCB007622AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD4E98E23AA5A2F00AC4ED7 /* EatMoreVegetableLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMoreVegetableLocationViewController.swift; sourceTree = "<group>"; };
-		DCE1BAD523B4F9C1007B3E43 /* bulletTrain-clip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bulletTrain-clip.mp4"; sourceTree = "<group>"; };
 		DCEA4EC423B3389D00E981D5 /* RecipeVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeVideoViewController.swift; sourceTree = "<group>"; };
 		DCEA4EC723B33A9800E981D5 /* Gordon Ramsay's Top 5 Chicken Recipes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gordon Ramsay's Top 5 Chicken Recipes.mp4"; sourceTree = "<group>"; };
 		DCEA4EC823B33A9800E981D5 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CHRISTMAS RECIPE- Christmas Beef Wellington.mp4"; sourceTree = "<group>"; };
@@ -100,9 +106,12 @@
 		DCEA4EC623B33A5E00E981D5 /* Local Videos */ = {
 			isa = PBXGroup;
 			children = (
+				DC7F374423BF64A000711935 /* bulletTrain.mp4 */,
+				DC7F374223BF64A000711935 /* monkey.mp4 */,
+				DC7F374323BF64A000711935 /* newYorkFlip.mp4 */,
+				DC7F374123BF64A000711935 /* shark.mp4 */,
 				DCEA4EC823B33A9800E981D5 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 */,
 				DCEA4EC923B33A9800E981D5 /* CHRISTMAS RECIPE- Roasted Turkey With Lemon Parsley & Garlic - Gordon Ramsay.mp4 */,
-				DCE1BAD523B4F9C1007B3E43 /* bulletTrain-clip.mp4 */,
 				DCEA4EC723B33A9800E981D5 /* Gordon Ramsay's Top 5 Chicken Recipes.mp4 */,
 			);
 			path = "Local Videos";
@@ -166,7 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE1BAD623B4F9C9007B3E43 /* bulletTrain-clip.mp4 in Resources */,
+				DC7F374523BF64B600711935 /* bulletTrain.mp4 in Resources */,
+				DC7F374623BF64B600711935 /* monkey.mp4 in Resources */,
+				DC7F374723BF64B600711935 /* newYorkFlip.mp4 in Resources */,
+				DC7F374823BF64B600711935 /* shark.mp4 in Resources */,
 				DCF5408323B39C0600714543 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 in Resources */,
 				DCF5408423B39C0600714543 /* CHRISTMAS RECIPE- Roasted Turkey With Lemon Parsley & Garlic - Gordon Ramsay.mp4 in Resources */,
 				DCF5408523B39C0600714543 /* Gordon Ramsay's Top 5 Chicken Recipes.mp4 in Resources */,

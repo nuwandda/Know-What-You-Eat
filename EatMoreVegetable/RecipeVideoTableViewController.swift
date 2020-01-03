@@ -131,17 +131,17 @@ extension RecipeVideoTableViewController {
         if (AutoCountHelper.shared.autoCountData == 0) {
             
             // TODO: Change the name of the video to real one.
-            guard let path1 = Bundle.main.path(forResource: "bulletTrain-clip", ofType:"mp4") else {
+            guard let path1 = Bundle.main.path(forResource: "bulletTrain", ofType:"mp4") else {
                 debugPrint("Video not found")
                 return
             }
             
-            guard let path2 = Bundle.main.path(forResource: "CHRISTMAS RECIPE- Roasted Turkey With Lemon Parsley & Garlic - Gordon Ramsay", ofType:"mp4") else {
+            guard let path2 = Bundle.main.path(forResource: "monkey", ofType:"mp4") else {
                 debugPrint("Video not found")
                 return
             }
             
-            guard let path3 = Bundle.main.path(forResource: "Gordon Ramsay's Top 5 Chicken Recipes", ofType:"mp4") else {
+            guard let path3 = Bundle.main.path(forResource: "shark", ofType:"mp4") else {
                 debugPrint("Video not found")
                 return
             }
