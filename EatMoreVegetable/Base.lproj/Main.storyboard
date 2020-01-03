@@ -11,7 +11,7 @@
         <scene sceneID="sXO-SM-YoU">
             <objects>
                 <viewController storyboardIdentifier="RecipeVideoTableViewController" id="G8w-cW-pVO" customClass="RecipeVideoTableViewController" customModule="EatMoreVegetable" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zQh-eU-Qn8">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="zQh-eU-Qn8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
