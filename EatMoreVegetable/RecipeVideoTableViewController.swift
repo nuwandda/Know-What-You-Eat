@@ -37,6 +37,8 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
         
         moc = appDelegate?.persistentContainer.viewContext
         
+        self.recipesTableView.rowHeight = 90.0
+        
         loadInitialData()
         
     }
@@ -101,6 +103,10 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
         cell?.detailTextLabel?.text = videoCaption
         
         cell?.imageView?.image = UIImage(named: "gordon_ramsey")
+        cell?.imageView?.layer.cornerRadius = view.layer.cornerRadius
+        cell?.imageView?.layer.borderWidth = view.layer.borderWidth
+        cell?.imageView?.layer.borderColor = view.layer.borderColor
+        cell?.imageView?.layer.masksToBounds = true
         
         return cell!
     }
@@ -192,3 +198,35 @@ extension RecipeVideoTableViewController {
         }
     }
 }
+
+//MARK: -UIView
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat {
+        get {
+            return layer.borderWidth
+        }
+        set {
+            layer.borderWidth = newValue
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor {
+        get {
+            return UIColor(cgColor: layer.borderColor!)
+        }
+        set {
+            layer.borderColor = newValue.cgColor
+        }
+    }
+}
+
