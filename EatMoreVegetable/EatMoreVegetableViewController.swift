@@ -112,7 +112,7 @@ class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, U
         
         let foodDate = foodItem.added!
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd yyyy, hh:mm"
+        dateFormatter.dateFormat = "dd MMMM yyyy, hh:mm"
         
         cell.detailTextLabel?.text = dateFormatter.string(from: foodDate)
         

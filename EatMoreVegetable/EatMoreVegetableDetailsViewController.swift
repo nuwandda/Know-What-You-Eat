@@ -67,7 +67,7 @@ class EatMoreVegetableDetailsViewController: UIViewController {
         }
         
         // To set date with the new food
-        dateFormatter.dateFormat = "MMMM dd yyyy, hh:mm"
+        dateFormatter.dateFormat = "dd MMMM yyyy, hh:mm"
         let dateStr = dateFormatter.string(from: Date())
         foodDateLabel.text = dateStr
         
@@ -259,7 +259,7 @@ extension EatMoreVegetableDetailsViewController: UITextFieldDelegate, UINavigati
                 return
         }
         
-        self.dateFormatter.dateFormat = "MMMM dd yyyy, hh:mm"
+        self.dateFormatter.dateFormat = "dd MMMM yyyy, hh:mm"
         let dateStr = self.dateFormatter.string(from: (f.added ?? nil)!)
         
         
