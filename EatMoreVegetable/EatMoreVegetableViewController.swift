@@ -27,14 +27,22 @@ class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, U
     var moc:NSManagedObjectContext!
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
     
+
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        setUI()
+    }
+    
+    fileprivate func setUI() {
         tableView.allowsSelection = true
         tableView.allowsMultipleSelection = false
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        
         
         moc = appDelegate?.persistentContainer.viewContext
         
