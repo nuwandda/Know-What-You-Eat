@@ -29,7 +29,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="PwC-3j-Fjo"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -46,7 +46,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Ecf-hP-Klz"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
