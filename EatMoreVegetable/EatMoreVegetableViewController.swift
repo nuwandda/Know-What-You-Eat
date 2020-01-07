@@ -36,6 +36,7 @@ class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, U
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
+        tableView.separatorColor = UIColor.white
         
         
         moc = appDelegate?.persistentContainer.viewContext

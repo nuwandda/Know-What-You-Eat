@@ -35,6 +35,7 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
         
         loadInitialData()
         
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,6 +96,11 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
         
         let videoCaption = recipeItem.videoCaption
         cell?.detailTextLabel?.text = videoCaption
+        
+        cell?.layoutMargins = UIEdgeInsets.zero
+        cell?.contentView.layoutMargins.top = 40
+        cell?.contentView.layoutMargins.bottom = 20
+        cell?.contentView.layoutMargins.left = 20
         
         cell?.imageView?.image = UIImage(named: "gordon_ramsey")
         cell?.imageView?.layer.cornerRadius = view.layer.cornerRadius

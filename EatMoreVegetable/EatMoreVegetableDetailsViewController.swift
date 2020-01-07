@@ -52,6 +52,30 @@ class EatMoreVegetableDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if locationLabel.text != "Location" {
+            visitPlaceButton.isEnabled = true
+            visitPlaceButton.layer.borderColor = UIColor.black.cgColor
+            visitPlaceButton.backgroundColor = UIColor.systemOrange
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        view.endEditing(true)
+    }
+    
+    func setupUI() {
+        
         // To set new food with a new image
         if self.foodTypeMode == .meat {
             foodImageView.image = UIImage(named: "Hamburger")
@@ -86,21 +110,21 @@ class EatMoreVegetableDetailsViewController: UIViewController {
         locationButton.layer.borderWidth = 1
         locationButton.layer.borderColor = UIColor.black.cgColor
         
+        foodCalorieStepper.layer.cornerRadius = 6;
+        foodCalorieStepper.layer.borderWidth = 1;
+        foodCalorieStepper.layer.borderColor = UIColor.black.cgColor
+        
+        if locationLabel.text == "Location" {
+            visitPlaceButton.isEnabled = false
+            visitPlaceButton.layer.borderColor = UIColor.gray.cgColor
+            visitPlaceButton.backgroundColor = UIColor.gray
+        }
+        else {
+            visitPlaceButton.isEnabled = true
+        }
+        
         // Create alert for descriptions
 //        createAlert()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        view.endEditing(true)
     }
     
     func saveNewFood(){
