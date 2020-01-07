@@ -1,10 +1,4 @@
-//
-//  EatMoreVegetableLocationViewController.swift
-//  EatMoreVegetable
-//
-//  Created by Rapsodo Mobile 6 on 18.12.2019.
-//  Copyright © 2019 Rapsodo Mobile 6. All rights reserved.
-//
+
 
 import UIKit
 import MapKit
