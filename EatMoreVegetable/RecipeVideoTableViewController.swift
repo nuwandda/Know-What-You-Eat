@@ -21,21 +21,23 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
     var videos: [String]?
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupTable()
+        loadInitialData()
+    }
+    
+    fileprivate func setupTable() {
         recipesTableView.allowsSelection = true
         recipesTableView.allowsMultipleSelection = false
         recipesTableView.dataSource = self
         recipesTableView.delegate = self
-        
+        recipesTableView.register(UINib(nibName: "VideoTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "VideoTableViewCell")
         moc = appDelegate?.persistentContainer.viewContext
         
         self.recipesTableView.rowHeight = 90.0
-        
-        loadInitialData()
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,32 +85,12 @@ class RecipeVideoTableViewController: UIViewController, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath)
-        var cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell")
-        if cell == nil || cell?.detailTextLabel == nil {
-            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "VideoCell")
-        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VideoTableViewCell") as? VideoTableViewCell else { return UITableViewCell() }
+        let recipe = self.recipeItems[indexPath.row]
+        let model = VideoTableCellModel(pp: UIImage(named: "gordon_ramsey"), title: recipe.videoName ?? "", subtitle: recipe.videoCaption ?? "")
+        cell.initCell(with: model)
         
-        let recipeItem = recipeItems[indexPath.row]
-        
-        let videoName = recipeItem.videoName
-
-        cell?.textLabel?.text = videoName
-        
-        let videoCaption = recipeItem.videoCaption
-        cell?.detailTextLabel?.text = videoCaption
-        
-        cell?.layoutMargins = UIEdgeInsets.zero
-        cell?.contentView.layoutMargins.top = 40
-        cell?.contentView.layoutMargins.bottom = 20
-        cell?.contentView.layoutMargins.left = 20
-        
-        cell?.imageView?.image = UIImage(named: "gordon_ramsey")
-        cell?.imageView?.layer.cornerRadius = view.layer.cornerRadius
-        cell?.imageView?.layer.borderWidth = view.layer.borderWidth
-        cell?.imageView?.layer.borderColor = view.layer.borderColor
-        cell?.imageView?.layer.masksToBounds = true
-        
-        return cell!
+        return cell
     }
 
 }
