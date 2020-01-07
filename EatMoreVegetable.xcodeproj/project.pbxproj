@@ -72,8 +72,6 @@
 		DCC5E42D23A27BC9007622AF = {
 			isa = PBXGroup;
 			children = (
-				DC1AFF6123C4A31C00B07723 /* VideoTableViewCell.swift */,
-				DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */,
 				DCC5E43823A27BC9007622AF /* EatMoreVegetable */,
 				DCC5E43723A27BC9007622AF /* Products */,
 			);
@@ -91,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				DCEA4EC623B33A5E00E981D5 /* Local Videos */,
+				DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */,
+				DC1AFF6123C4A31C00B07723 /* VideoTableViewCell.swift */,
 				DCC1B29623A3692A00CE9844 /* EatMoreVegetableViewController.swift */,
 				DCC1B29823A3844200CE9844 /* EatMoreVegetableDetailsViewController.swift */,
 				DCD4E98E23AA5A2F00AC4ED7 /* EatMoreVegetableLocationViewController.swift */,

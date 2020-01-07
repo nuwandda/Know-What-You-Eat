@@ -36,6 +36,8 @@ class EatMoreVegetableDetailsViewController: UIViewController {
     @IBOutlet weak var fatTextField: UITextField!
     @IBOutlet weak var carbsTextField: UITextField!
     @IBOutlet weak var visitPlaceButton: UIButton!
+    // This constraint ties an element at zero points from the bottom layout guide
+    @IBOutlet var keyboardHeightLayoutConstraint: NSLayoutConstraint?
     
     //MARK: Properties
     var food: Food?
@@ -53,6 +55,10 @@ class EatMoreVegetableDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -125,6 +131,43 @@ class EatMoreVegetableDetailsViewController: UIViewController {
         
         // Create alert for descriptions
 //        createAlert()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+     @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= getMoveableDistance(keyboarHeight: keyboardSize.height)
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    //get the distance to move up the main view for the focus textfiled
+    func getMoveableDistance(keyboarHeight : CGFloat) ->  CGFloat{
+        var y:CGFloat = 0.0
+        if let activeTF = getSelectedTextField(){
+            var tfMaxY = activeTF.frame.maxY
+            var containerView = activeTF.superview!
+            while containerView.frame.maxY != self.view.frame.maxY{
+                let contViewFrm = containerView.convert(activeTF.frame, to: containerView.superview)
+                tfMaxY = tfMaxY + contViewFrm.minY
+                containerView = containerView.superview!
+            }
+            let keyboardMinY = self.view.frame.height - keyboarHeight
+            if tfMaxY > keyboardMinY{
+                y = (tfMaxY - keyboardMinY) + 10.0
+            }
+        }
+
+        return y
     }
     
     func saveNewFood(){
@@ -298,9 +341,38 @@ extension EatMoreVegetableDetailsViewController: UITextFieldDelegate, UINavigati
         }
     }
     
+    func getSelectedTextField() -> UITextField? {
+
+        let totalTextFields = getTextFieldsInView(view: self.view)
+
+        for textField in totalTextFields{
+            if textField.isFirstResponder{
+                return textField
+            }
+        }
+
+        return nil
+
+    }
+
+    func getTextFieldsInView(view: UIView) -> [UITextField] {
+
+        var totalTextFields = [UITextField]()
+
+        for subview in view.subviews as [UIView] {
+            if let textField = subview as? UITextField {
+                totalTextFields += [textField]
+            } else {
+                totalTextFields += getTextFieldsInView(view: subview)
+            }
+        }
+
+        return totalTextFields
+    }
+    
 }
 
-//MARK: EatMoreVegetableLocationViewControllerDelegate
+//MARK: -EatMoreVegetableLocationViewControllerDelegate
 extension EatMoreVegetableDetailsViewController: EatMoreVegetableLocationViewControllerDelegate {
     
     func setLocation(location: String){
