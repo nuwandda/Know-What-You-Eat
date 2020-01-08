@@ -21,7 +21,7 @@ class LoginViewController: ViewController {
         super.viewDidLoad()
 
         setupUI()
-        
+        self.hideKeyboardWhenTappedAround()
     }
     
     fileprivate func setupUI() {
@@ -48,7 +48,17 @@ class LoginViewController: ViewController {
                  }
         }
     }
-    
 
+}
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
