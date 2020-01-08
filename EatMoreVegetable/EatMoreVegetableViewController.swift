@@ -2,11 +2,13 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var viewRecipesButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     //MARK: Properties
     var foodItems = [Food]() {
@@ -164,6 +166,22 @@ class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, U
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @IBAction func logOutTapped(_ sender: UIButton) {
+        
+        do {
+               try Auth.auth().signOut()
+           }
+        catch let signOutError as NSError {
+               print ("Error signing out: %@", signOutError)
+           }
+           
+           let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+           if let vc = mainStoryboard.instantiateViewController(withIdentifier: "StartViewController") as? StartViewController {
+               
+               self.navigationController?.pushViewController(vc, animated: true)
+           }
     }
     
 }
