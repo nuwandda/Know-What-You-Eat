@@ -33,7 +33,11 @@ class LoginViewController: ViewController {
         
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
            if error == nil{
-             self.performSegue(withIdentifier: "loginToHome", sender: self)
+             let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+             if let vc = mainStoryboard.instantiateViewController(withIdentifier: "EatMoreVegetableViewController") as? EatMoreVegetableViewController {
+                 
+                 self.navigationController?.pushViewController(vc, animated: true)
+             }
                           }
             else{
              let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -42,12 +46,6 @@ class LoginViewController: ViewController {
               alertController.addAction(defaultAction)
               self.present(alertController, animated: true, completion: nil)
                  }
-        }
-        
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        if let vc = mainStoryboard.instantiateViewController(withIdentifier: "EatMoreVegetableViewController") as? EatMoreVegetableViewController {
-            
-            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
