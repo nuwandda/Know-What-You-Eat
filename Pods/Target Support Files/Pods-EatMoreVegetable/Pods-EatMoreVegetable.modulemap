@@ -1,0 +1,6 @@
+framework module Pods_EatMoreVegetable {
+  umbrella header "Pods-EatMoreVegetable-umbrella.h"
+
+  export *
+  module * { export * }
+}

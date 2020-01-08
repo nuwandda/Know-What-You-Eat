@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A45915B1426B19C7F353A14 /* Pods_EatMoreVegetable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA9098C4030EC9F5EBF57A3 /* Pods_EatMoreVegetable.framework */; };
 		DC1AFF6323C4A31C00B07723 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1AFF6123C4A31C00B07723 /* VideoTableViewCell.swift */; };
 		DC1AFF6423C4A31C00B07723 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */; };
 		DC76CD0223C5B07500F7AAA5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0123C5B07500F7AAA5 /* StartViewController.swift */; };
 		DC76CD0423C5B0EC00F7AAA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */; };
 		DC76CD0623C5B12100F7AAA5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0523C5B12100F7AAA5 /* SignUpViewController.swift */; };
+		DC76CD0823C5C8AC00F7AAA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC76CD0723C5C8AC00F7AAA5 /* GoogleService-Info.plist */; };
 		DC7F374523BF64B600711935 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374423BF64A000711935 /* bulletTrain.mp4 */; };
 		DC7F374623BF64B600711935 /* monkey.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374223BF64A000711935 /* monkey.mp4 */; };
 		DC7F374723BF64B600711935 /* newYorkFlip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374323BF64A000711935 /* newYorkFlip.mp4 */; };
@@ -35,11 +37,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F381EE7BAE1DF385B0F8FC4 /* Pods-EatMoreVegetable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMoreVegetable.release.xcconfig"; path = "Target Support Files/Pods-EatMoreVegetable/Pods-EatMoreVegetable.release.xcconfig"; sourceTree = "<group>"; };
+		BFA9098C4030EC9F5EBF57A3 /* Pods_EatMoreVegetable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatMoreVegetable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F029E0C22A649BA7DB3302 /* Pods-EatMoreVegetable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMoreVegetable.debug.xcconfig"; path = "Target Support Files/Pods-EatMoreVegetable/Pods-EatMoreVegetable.debug.xcconfig"; sourceTree = "<group>"; };
 		DC1AFF6123C4A31C00B07723 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		DC76CD0123C5B07500F7AAA5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC76CD0523C5B12100F7AAA5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DC76CD0723C5C8AC00F7AAA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC7F374123BF64A000711935 /* shark.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shark.mp4; sourceTree = "<group>"; };
 		DC7F374223BF64A000711935 /* monkey.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = monkey.mp4; sourceTree = "<group>"; };
 		DC7F374323BF64A000711935 /* newYorkFlip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = newYorkFlip.mp4; sourceTree = "<group>"; };
@@ -69,17 +75,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A45915B1426B19C7F353A14 /* Pods_EatMoreVegetable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114273213F9CA544137A34B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA9098C4030EC9F5EBF57A3 /* Pods_EatMoreVegetable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DCC5E42D23A27BC9007622AF = {
 			isa = PBXGroup;
 			children = (
 				DCC5E43823A27BC9007622AF /* EatMoreVegetable */,
 				DCC5E43723A27BC9007622AF /* Products */,
+				FDCA468EA24B5D3A7633CBEB /* Pods */,
+				114273213F9CA544137A34B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +127,7 @@
 				DCC5E44523A27BCB007622AF /* Assets.xcassets */,
 				DCC5E44723A27BCB007622AF /* LaunchScreen.storyboard */,
 				DCC5E44A23A27BCB007622AF /* Info.plist */,
+				DC76CD0723C5C8AC00F7AAA5 /* GoogleService-Info.plist */,
 				DCC5E44223A27BC9007622AF /* EatMoreVegetable.xcdatamodeld */,
 				DCC1B29A23A3CD8F00CE9844 /* AutoCountHelper.swift */,
 				DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */,
@@ -132,6 +150,16 @@
 			path = "Local Videos";
 			sourceTree = "<group>";
 		};
+		FDCA468EA24B5D3A7633CBEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6F029E0C22A649BA7DB3302 /* Pods-EatMoreVegetable.debug.xcconfig */,
+				6F381EE7BAE1DF385B0F8FC4 /* Pods-EatMoreVegetable.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC5E44D23A27BCB007622AF /* Build configuration list for PBXNativeTarget "EatMoreVegetable" */;
 			buildPhases = (
+				ABB69CEE3948219779EC7D7B /* [CP] Check Pods Manifest.lock */,
 				DCC5E43223A27BC9007622AF /* Sources */,
 				DCC5E43323A27BC9007622AF /* Frameworks */,
 				DCC5E43423A27BC9007622AF /* Resources */,
+				5488B1D8A38D56D5BA53358F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +225,7 @@
 				DC7F374723BF64B600711935 /* newYorkFlip.mp4 in Resources */,
 				DC7F374823BF64B600711935 /* shark.mp4 in Resources */,
 				DCF5408323B39C0600714543 /* CHRISTMAS RECIPE- Christmas Beef Wellington.mp4 in Resources */,
+				DC76CD0823C5C8AC00F7AAA5 /* GoogleService-Info.plist in Resources */,
 				DCF5408423B39C0600714543 /* CHRISTMAS RECIPE- Roasted Turkey With Lemon Parsley & Garlic - Gordon Ramsay.mp4 in Resources */,
 				DCF5408523B39C0600714543 /* Gordon Ramsay's Top 5 Chicken Recipes.mp4 in Resources */,
 				DC1AFF6423C4A31C00B07723 /* VideoTableViewCell.xib in Resources */,
@@ -205,6 +236,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5488B1D8A38D56D5BA53358F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EatMoreVegetable/Pods-EatMoreVegetable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EatMoreVegetable/Pods-EatMoreVegetable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EatMoreVegetable/Pods-EatMoreVegetable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB69CEE3948219779EC7D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatMoreVegetable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCC5E43223A27BC9007622AF /* Sources */ = {
@@ -366,6 +439,7 @@
 		};
 		DCC5E44E23A27BCB007622AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F029E0C22A649BA7DB3302 /* Pods-EatMoreVegetable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +459,7 @@
 		};
 		DCC5E44F23A27BCB007622AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F381EE7BAE1DF385B0F8FC4 /* Pods-EatMoreVegetable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
