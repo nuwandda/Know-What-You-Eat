@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class StartViewController: ViewController {
 
@@ -17,6 +18,17 @@ class StartViewController: ViewController {
         super.viewDidLoad()
         
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            if let vc = mainStoryboard.instantiateViewController(withIdentifier: "EatMoreVegetableViewController") as? EatMoreVegetableViewController {
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     
     fileprivate func setupUI() {
