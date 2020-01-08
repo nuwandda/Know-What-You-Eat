@@ -28,8 +28,20 @@ class StartViewController: ViewController {
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let vc = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     @IBAction func signupTapped(_ sender: UIButton) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let vc = mainStoryboard.instantiateViewController(withIdentifier: "SignUpViewController") as? SignUpViewController {
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }
