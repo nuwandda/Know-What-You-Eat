@@ -78,7 +78,6 @@
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="centerY" secondItem="LM9-og-FVR" secondAttribute="centerY" id="2ZL-eH-EuL"/>
                                     <constraint firstAttribute="trailing" secondItem="Dhv-r6-z80" secondAttribute="trailing" constant="20" id="3UE-Lg-pDq"/>
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="centerX" secondItem="LM9-og-FVR" secondAttribute="centerX" id="Ase-ht-aiU"/>
-                                    <constraint firstItem="OZz-6k-LeX" firstAttribute="top" secondItem="LM9-og-FVR" secondAttribute="top" constant="52" id="DSc-Fn-V82"/>
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="leading" secondItem="LM9-og-FVR" secondAttribute="leading" constant="20" id="WGk-xP-0DR"/>
                                     <constraint firstItem="OZz-6k-LeX" firstAttribute="centerX" secondItem="LM9-og-FVR" secondAttribute="centerX" id="wSj-pd-7fn"/>
                                 </constraints>
@@ -87,6 +86,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="LM9-og-FVR" firstAttribute="trailing" secondItem="jXx-hd-4h8" secondAttribute="trailing" id="9xa-8v-ylX"/>
+                            <constraint firstItem="OZz-6k-LeX" firstAttribute="top" secondItem="jXx-hd-4h8" secondAttribute="top" constant="8" id="Rkv-93-SIt"/>
                             <constraint firstItem="LM9-og-FVR" firstAttribute="top" secondItem="fnX-zo-9ki" secondAttribute="top" id="dCG-63-sIo"/>
                             <constraint firstItem="LM9-og-FVR" firstAttribute="leading" secondItem="jXx-hd-4h8" secondAttribute="leading" id="hAa-u3-Qiq"/>
                             <constraint firstAttribute="bottom" secondItem="LM9-og-FVR" secondAttribute="bottom" id="k6Z-Jg-pwj"/>
@@ -359,7 +359,6 @@
                                     <constraint firstItem="tWD-qb-R6b" firstAttribute="leading" secondItem="BLz-HQ-guH" secondAttribute="leading" constant="20" id="5G5-d7-3oP"/>
                                     <constraint firstAttribute="trailing" secondItem="tWD-qb-R6b" secondAttribute="trailing" constant="20" id="I0m-46-0tz"/>
                                     <constraint firstItem="tWD-qb-R6b" firstAttribute="centerY" secondItem="BLz-HQ-guH" secondAttribute="centerY" id="J2s-XN-PVv"/>
-                                    <constraint firstItem="9Zv-36-LbH" firstAttribute="top" secondItem="BLz-HQ-guH" secondAttribute="top" constant="52" id="Q1g-fh-NGD"/>
                                     <constraint firstItem="9Zv-36-LbH" firstAttribute="centerX" secondItem="BLz-HQ-guH" secondAttribute="centerX" id="fnY-bn-KEj"/>
                                 </constraints>
                             </view>
@@ -368,6 +367,7 @@
                         <constraints>
                             <constraint firstItem="BLz-HQ-guH" firstAttribute="leading" secondItem="4Kk-Np-pkD" secondAttribute="leading" id="6pg-mg-euT"/>
                             <constraint firstAttribute="bottom" secondItem="BLz-HQ-guH" secondAttribute="bottom" id="SSo-dF-RqJ"/>
+                            <constraint firstItem="9Zv-36-LbH" firstAttribute="top" secondItem="4Kk-Np-pkD" secondAttribute="top" constant="8" id="ed6-4T-Kd3"/>
                             <constraint firstItem="BLz-HQ-guH" firstAttribute="trailing" secondItem="4Kk-Np-pkD" secondAttribute="trailing" id="hAX-L7-WaY"/>
                             <constraint firstItem="BLz-HQ-guH" firstAttribute="top" secondItem="lHq-Rr-3UX" secondAttribute="top" id="puJ-cI-nHP"/>
                         </constraints>
