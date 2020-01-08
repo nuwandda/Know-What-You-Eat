@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-o7-lZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-573"/>
+            <point key="canvasLocation" x="228" y="-579"/>
         </scene>
         <!--Recipe Video Table View Controller-->
         <scene sceneID="sXO-SM-YoU">
@@ -186,6 +186,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GaY-9B-XNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1045.7271364317842" y="-1300"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="LuY-Ip-0GK">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="VyZ-OB-Smy" customClass="SignUpViewController" customModule="EatMoreVegetable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHq-Rr-3UX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4Kk-Np-pkD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymB-bg-RMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="808"/>
         </scene>
         <!--Eat More Vegetable View Controller-->
         <scene sceneID="tne-QT-ifu">

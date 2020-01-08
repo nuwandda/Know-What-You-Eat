@@ -11,6 +11,7 @@
 		DC1AFF6423C4A31C00B07723 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */; };
 		DC76CD0223C5B07500F7AAA5 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0123C5B07500F7AAA5 /* StartViewController.swift */; };
 		DC76CD0423C5B0EC00F7AAA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */; };
+		DC76CD0623C5B12100F7AAA5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC76CD0523C5B12100F7AAA5 /* SignUpViewController.swift */; };
 		DC7F374523BF64B600711935 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374423BF64A000711935 /* bulletTrain.mp4 */; };
 		DC7F374623BF64B600711935 /* monkey.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374223BF64A000711935 /* monkey.mp4 */; };
 		DC7F374723BF64B600711935 /* newYorkFlip.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DC7F374323BF64A000711935 /* newYorkFlip.mp4 */; };
@@ -38,6 +39,7 @@
 		DC1AFF6223C4A31C00B07723 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		DC76CD0123C5B07500F7AAA5 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DC76CD0523C5B12100F7AAA5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DC7F374123BF64A000711935 /* shark.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shark.mp4; sourceTree = "<group>"; };
 		DC7F374223BF64A000711935 /* monkey.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = monkey.mp4; sourceTree = "<group>"; };
 		DC7F374323BF64A000711935 /* newYorkFlip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = newYorkFlip.mp4; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				DCC5E44223A27BC9007622AF /* EatMoreVegetable.xcdatamodeld */,
 				DCC1B29A23A3CD8F00CE9844 /* AutoCountHelper.swift */,
 				DC76CD0323C5B0EC00F7AAA5 /* LoginViewController.swift */,
+				DC76CD0523C5B12100F7AAA5 /* SignUpViewController.swift */,
 			);
 			path = EatMoreVegetable;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				DC76CD0223C5B07500F7AAA5 /* StartViewController.swift in Sources */,
 				DCD4E98F23AA5A2F00AC4ED7 /* EatMoreVegetableLocationViewController.swift in Sources */,
 				DCC5E43A23A27BC9007622AF /* AppDelegate.swift in Sources */,
+				DC76CD0623C5B12100F7AAA5 /* SignUpViewController.swift in Sources */,
 				DCC5E43C23A27BC9007622AF /* SceneDelegate.swift in Sources */,
 				DCC1B29B23A3CD8F00CE9844 /* AutoCountHelper.swift in Sources */,
 				DCC1B29723A3692A00CE9844 /* EatMoreVegetableViewController.swift in Sources */,
