@@ -7,3 +7,5 @@ A starter appllication for iOS
 * Map
 * Navigation
 * Data Storage with Core Data
+* Firebase
+* Login/Sign Up
