@@ -10,21 +10,23 @@ import UIKit
 
 class StartViewController: ViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        
+        signupButton.layer.borderWidth = 1
+        signupButton.layer.borderColor = UIColor.white.cgColor
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
     }
-    */
-
+    @IBAction func signupTapped(_ sender: UIButton) {
+    }
+    
 }
