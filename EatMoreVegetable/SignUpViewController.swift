@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: ViewController {
     
@@ -32,11 +33,28 @@ class SignUpViewController: ViewController {
     
     @IBAction func signupTapped(_ sender: UIButton) {
         
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        if let vc = mainStoryboard.instantiateViewController(withIdentifier: "EatMoreVegetableViewController") as? EatMoreVegetableViewController {
-            
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        if passwordTextField.text != rePasswordTextField.text {let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+        alertController.addAction(defaultAction)
+        self.present(alertController, animated: true, completion: nil)
+                }else{
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!){ (user, error) in if error == nil {
+           let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+           if let vc = mainStoryboard.instantiateViewController(withIdentifier: "StartViewController") as? StartViewController {
+               
+               self.navigationController?.pushViewController(vc, animated: true)
+           }
+                        }
+         else{
+           let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+           let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+               }
+                    }
+              }
     }
     
 }
