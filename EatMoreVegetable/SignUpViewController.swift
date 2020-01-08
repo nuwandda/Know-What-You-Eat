@@ -9,22 +9,28 @@
 import UIKit
 
 class SignUpViewController: ViewController {
-
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var rePasswordLabel: UILabel!
+    @IBOutlet weak var rePasswordTextField: UITextField!
+    @IBOutlet weak var signupButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    fileprivate func setupUI() {
+        signupButton.layer.borderWidth = 2
+        signupButton.layer.borderColor = UIColor.white.cgColor
     }
-    */
-
+    
+    @IBAction func signupTapped(_ sender: UIButton) {
+    }
+    
 }
