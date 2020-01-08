@@ -14,13 +14,87 @@
                     <view key="view" contentMode="scaleToFill" id="fnX-zo-9ki">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM9-og-FVR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dhv-r6-z80">
+                                        <rect key="frame" x="20" y="260" width="335" height="292"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-Xs-cbP">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-4B-A4B">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Me-TP-Kkb">
+                                                        <rect key="frame" x="0.0" y="30" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vX-YM-9jE">
+                                                <rect key="frame" x="0.0" y="114" width="335" height="64"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uks-9d-v2a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Im1-vm-amS">
+                                                        <rect key="frame" x="0.0" y="30" width="335" height="34"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlt-UA-VOg">
+                                                <rect key="frame" x="0.0" y="228" width="335" height="64"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="LOGIN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="794-VD-Xvo" eventType="touchUpInside" id="pOo-ge-I3B"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0010949385529999999" green="0.38561245420000001" blue="0.0016988968599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dhv-r6-z80" firstAttribute="centerY" secondItem="LM9-og-FVR" secondAttribute="centerY" id="2ZL-eH-EuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dhv-r6-z80" secondAttribute="trailing" constant="20" id="3UE-Lg-pDq"/>
+                                    <constraint firstItem="Dhv-r6-z80" firstAttribute="centerX" secondItem="LM9-og-FVR" secondAttribute="centerX" id="Ase-ht-aiU"/>
+                                    <constraint firstItem="Dhv-r6-z80" firstAttribute="leading" secondItem="LM9-og-FVR" secondAttribute="leading" constant="20" id="WGk-xP-0DR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LM9-og-FVR" firstAttribute="trailing" secondItem="jXx-hd-4h8" secondAttribute="trailing" id="9xa-8v-ylX"/>
+                            <constraint firstItem="LM9-og-FVR" firstAttribute="top" secondItem="fnX-zo-9ki" secondAttribute="top" id="dCG-63-sIo"/>
+                            <constraint firstItem="LM9-og-FVR" firstAttribute="leading" secondItem="jXx-hd-4h8" secondAttribute="leading" id="hAa-u3-Qiq"/>
+                            <constraint firstAttribute="bottom" secondItem="LM9-og-FVR" secondAttribute="bottom" id="k6Z-Jg-pwj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jXx-hd-4h8"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="y2g-4B-A4B" id="qJx-dG-b1c"/>
+                        <outlet property="emailTextField" destination="1Me-TP-Kkb" id="ZjT-qa-yqL"/>
+                        <outlet property="loginButton" destination="hlt-UA-VOg" id="Vux-iN-1V4"/>
+                        <outlet property="passwordLabel" destination="Uks-9d-v2a" id="xgy-aZ-nr9"/>
+                        <outlet property="passwordTextField" destination="Im1-vm-amS" id="YqO-y3-YPn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlz-o7-lZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="-579"/>
+            <point key="canvasLocation" x="228" y="-579.31034482758628"/>
         </scene>
         <!--Recipe Video Table View Controller-->
         <scene sceneID="sXO-SM-YoU">
@@ -637,7 +711,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-mh-ppR">
                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="80"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="LOGIN">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -647,7 +721,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yir-mH-sDU">
                                                 <rect key="frame" x="188" y="0.0" width="187" height="80"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="SIGNUP">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -661,7 +735,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0010949385530375671" green="0.38561245424619295" blue="0.0016988968596690223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="i8k-An-YKC" firstAttribute="leading" secondItem="ooE-L7-5Fc" secondAttribute="leading" id="6wB-Kg-cyt"/>
                                     <constraint firstAttribute="height" constant="80" id="8Tz-bT-UnW"/>
