@@ -65,13 +65,22 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="OZz-6k-LeX">
+                                        <rect key="frame" x="142.66666666666666" y="52" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="JYl-Kw-eTB"/>
+                                            <constraint firstAttribute="width" constant="90" id="gj9-J0-aZD"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0010949385529999999" green="0.38561245420000001" blue="0.0016988968599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="centerY" secondItem="LM9-og-FVR" secondAttribute="centerY" id="2ZL-eH-EuL"/>
                                     <constraint firstAttribute="trailing" secondItem="Dhv-r6-z80" secondAttribute="trailing" constant="20" id="3UE-Lg-pDq"/>
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="centerX" secondItem="LM9-og-FVR" secondAttribute="centerX" id="Ase-ht-aiU"/>
+                                    <constraint firstItem="OZz-6k-LeX" firstAttribute="top" secondItem="LM9-og-FVR" secondAttribute="top" constant="52" id="DSc-Fn-V82"/>
                                     <constraint firstItem="Dhv-r6-z80" firstAttribute="leading" secondItem="LM9-og-FVR" secondAttribute="leading" constant="20" id="WGk-xP-0DR"/>
+                                    <constraint firstItem="OZz-6k-LeX" firstAttribute="centerX" secondItem="LM9-og-FVR" secondAttribute="centerX" id="wSj-pd-7fn"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -272,6 +281,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLz-HQ-guH">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="9Zv-36-LbH">
+                                        <rect key="frame" x="142.66666666666666" y="52" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="pRi-hI-NRT"/>
+                                            <constraint firstAttribute="height" constant="90" id="vHh-vq-RYG"/>
+                                        </constraints>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="tWD-qb-R6b">
                                         <rect key="frame" x="20" y="203" width="335" height="406"/>
                                         <subviews>
@@ -343,6 +359,8 @@
                                     <constraint firstItem="tWD-qb-R6b" firstAttribute="leading" secondItem="BLz-HQ-guH" secondAttribute="leading" constant="20" id="5G5-d7-3oP"/>
                                     <constraint firstAttribute="trailing" secondItem="tWD-qb-R6b" secondAttribute="trailing" constant="20" id="I0m-46-0tz"/>
                                     <constraint firstItem="tWD-qb-R6b" firstAttribute="centerY" secondItem="BLz-HQ-guH" secondAttribute="centerY" id="J2s-XN-PVv"/>
+                                    <constraint firstItem="9Zv-36-LbH" firstAttribute="top" secondItem="BLz-HQ-guH" secondAttribute="top" constant="52" id="Q1g-fh-NGD"/>
+                                    <constraint firstItem="9Zv-36-LbH" firstAttribute="centerX" secondItem="BLz-HQ-guH" secondAttribute="centerX" id="fnY-bn-KEj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -812,7 +830,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meal1" translatesAutoresizingMaskIntoConstraints="NO" id="Frl-F7-iWx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812.00000000000045"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-L7-5Fc">
                                 <rect key="frame" x="0.0" y="695" width="375" height="80"/>
@@ -882,11 +900,13 @@
     <resources>
         <image name="Hamburger" width="100" height="100"/>
         <image name="Pumpkin" width="100" height="100"/>
+        <image name="login" width="100" height="100"/>
         <image name="meal1" width="4350" height="2900"/>
         <image name="orange-back" width="64" height="64"/>
         <image name="orange-forward" width="64" height="64"/>
         <image name="orange-next" width="64" height="64"/>
         <image name="orange-pause" width="64" height="64"/>
         <image name="orange-rewind" width="64" height="64"/>
+        <image name="signup" width="100" height="100"/>
     </resources>
 </document>
