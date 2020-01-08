@@ -29,6 +29,12 @@ class LoginViewController: ViewController {
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        if let vc = mainStoryboard.instantiateViewController(withIdentifier: "EatMoreVegetableViewController") as? EatMoreVegetableViewController {
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 
