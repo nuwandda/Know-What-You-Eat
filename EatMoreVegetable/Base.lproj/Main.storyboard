@@ -449,7 +449,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know What You Eat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sek-hZ-caN">
-                                <rect key="frame" x="20" y="60.999999999999993" width="209" height="27.666666666666664"/>
+                                <rect key="frame" x="20" y="309" width="209" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -461,10 +461,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f2-BT-kvD">
-                                <rect key="frame" x="288" y="366" width="71" height="32"/>
+                                <rect key="frame" x="20" y="59" width="71" height="32"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="Geg-bl-u4d"/>
+                                    <constraint firstAttribute="width" constant="71" id="Bkv-FG-DKq"/>
+                                    <constraint firstAttribute="height" constant="32" id="ZKY-My-MJL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Log out">
@@ -488,13 +489,13 @@
                             <constraint firstItem="Kpa-n5-i9O" firstAttribute="baseline" secondItem="h5D-fp-zgp" secondAttribute="baseline" id="GUT-6B-rOe"/>
                             <constraint firstItem="fJB-4u-L5G" firstAttribute="top" secondItem="N1B-zH-Nlj" secondAttribute="bottom" constant="14.5" id="KcB-Zq-aX1"/>
                             <constraint firstItem="sHi-J8-JeB" firstAttribute="top" secondItem="h5D-fp-zgp" secondAttribute="bottom" constant="4" id="LOW-rL-a8r"/>
+                            <constraint firstItem="5f2-BT-kvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OJi-13-B8Q"/>
                             <constraint firstItem="h5D-fp-zgp" firstAttribute="centerX" secondItem="sHi-J8-JeB" secondAttribute="centerX" id="Pil-8e-yQb"/>
                             <constraint firstItem="Kpa-n5-i9O" firstAttribute="firstBaseline" secondItem="h5D-fp-zgp" secondAttribute="firstBaseline" id="RNk-1e-AKu"/>
                             <constraint firstItem="Kpa-n5-i9O" firstAttribute="centerX" secondItem="i7L-fy-kfE" secondAttribute="centerX" constant="0.16666666666662877" id="UAi-Bp-2sj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N1B-zH-Nlj" secondAttribute="trailing" constant="222" id="Uby-bI-fc9"/>
                             <constraint firstItem="Kpa-n5-i9O" firstAttribute="baseline" secondItem="h5D-fp-zgp" secondAttribute="baseline" id="Unr-Z8-InO"/>
-                            <constraint firstItem="5f2-BT-kvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="288" id="Yhu-96-uKa"/>
-                            <constraint firstItem="sek-hZ-caN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="dKA-rP-uR2"/>
+                            <constraint firstItem="sek-hZ-caN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="265" id="dKA-rP-uR2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2GL-I1-zVH" secondAttribute="trailing" constant="16" id="em9-aw-LSL"/>
                             <constraint firstItem="fJB-4u-L5G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="450" id="fiD-zg-UOF"/>
                             <constraint firstItem="2GL-I1-zVH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="288" id="g7t-Ir-zoV"/>
@@ -502,12 +503,10 @@
                             <constraint firstItem="sek-hZ-caN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mON-Lo-NEA"/>
                             <constraint firstItem="Kpa-n5-i9O" firstAttribute="trailing" secondItem="i7L-fy-kfE" secondAttribute="trailing" constant="-5.3333333333333712" id="oUe-yJ-xcD"/>
                             <constraint firstItem="2GL-I1-zVH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sek-hZ-caN" secondAttribute="trailing" constant="8" symbolic="YES" id="ptT-4a-Aov"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5f2-BT-kvD" secondAttribute="trailing" constant="16" id="tp6-Tq-46H"/>
+                            <constraint firstItem="5f2-BT-kvD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="t9n-kY-a2t"/>
                             <constraint firstItem="fJB-4u-L5G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uhP-Vy-Upd"/>
-                            <constraint firstItem="5f2-BT-kvD" firstAttribute="top" secondItem="i7L-fy-kfE" secondAttribute="bottom" constant="141.33333333333334" id="uvu-eu-Mc5"/>
-                            <constraint firstItem="fJB-4u-L5G" firstAttribute="top" secondItem="5f2-BT-kvD" secondAttribute="bottom" constant="52" id="wnm-yc-1KJ"/>
                             <constraint firstItem="sHi-J8-JeB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="wpi-f9-LoK"/>
-                            <constraint firstItem="h5D-fp-zgp" firstAttribute="top" secondItem="sek-hZ-caN" secondAttribute="bottom" constant="12" id="ysI-rT-Xvz"/>
+                            <constraint firstItem="h5D-fp-zgp" firstAttribute="top" secondItem="sek-hZ-caN" secondAttribute="bottom" constant="-236" id="ysI-rT-Xvz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

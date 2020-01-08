@@ -46,6 +46,10 @@ class EatMoreVegetableViewController: UIViewController, UITableViewDataSource, U
         viewRecipesButton.layer.cornerRadius = 6
         viewRecipesButton.layer.borderWidth = 1
         viewRecipesButton.layer.borderColor = UIColor.black.cgColor
+        
+        logoutButton.layer.cornerRadius = 6
+        logoutButton.layer.borderWidth = 1
+        logoutButton.layer.borderColor = UIColor.black.cgColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
