@@ -473,7 +473,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logOutTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zC9-HE-0I0"/>
-                                    <action selector="viewRecipes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQP-S6-WpB"/>
                                 </connections>
                             </button>
                         </subviews>
